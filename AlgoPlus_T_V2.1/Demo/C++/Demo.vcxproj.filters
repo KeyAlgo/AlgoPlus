@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="APApi.h" />
+    <ClInclude Include="APDataType.h" />
+    <ClInclude Include="APError.h" />
+    <ClInclude Include="APStruct.h" />
+    <ClInclude Include="APCTPEventStruct.h" />
+    <ClInclude Include="APErrorType.h" />
+    <ClInclude Include="APEventType.h" />
+    <ClInclude Include="APUserType.h" />
+    <ClInclude Include="APUtilities.h" />
+    <ClInclude Include="ThostFtdcMdApi.h" />
+    <ClInclude Include="ThostFtdcTraderApi.h" />
+    <ClInclude Include="ThostFtdcUserApiDataType.h" />
+    <ClInclude Include="ThostFtdcUserApiStruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
