@@ -13,12 +13,13 @@ std::vector<std::string> vStandard = { g_StansardID };
 CBaseTrader* g_pTrader;
 CAPOrderField* pOrder = NULL;
 
-void onMarketDataCallback(CAPMarketDataField* pAPMarketDataField)
+void onMarketDataCallback(TAPEventIDType nEventID, CAPMarketDataField* pAPMarketDataField)
 {
 	TAPStructKeyValueMap mStructKeyValueMap = TAPStructKeyValueMap();
 	CAPPrintHelper::toMap(mStructKeyValueMap, pAPMarketDataField);
 	std::string strInstrumentID = mStructKeyValueMap["InstrumentID"];
-	printf("%s\n", strInstrumentID.c_str());
+	std::string strLastPrice = mStructKeyValueMap["LastPrice"];
+	printf("%s:%f\n", strInstrumentID.c_str(), strLastPrice.c_str());
 };
 void onOrderCallback(TAPEventIDType nEventID, CAPOrderField* pAPOrderField, CAPPositionField* pAPPositionField, double dUsableCash)
 {
