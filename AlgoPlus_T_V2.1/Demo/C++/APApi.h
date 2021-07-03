@@ -118,7 +118,7 @@ extern "C" {
 	APAPI_DLL_EXPORT TAPErrorIDType updatePassword(CBaseTrader* pAPTrader, char chPasswordFlag, const char* szOldPassword, const char* szNewPassword);
 
 	/// 添加任务
-	APAPI_DLL_EXPORT TAPErrorIDType addTask(CBaseTrader* pAPTrader, TAPEventIDType nEventID, CAPQueryCommandField* pQueryCommandField = NULL, int nMaxExecuteCount = 1, bool bRefuseError = false, TAPTimeAnchorType nExecuteGap = -1, TAPTimeAnchorType nExecuteTimeout = -1);
+	APAPI_DLL_EXPORT TAPErrorIDType addTask(CBaseTrader* pAPTrader, TAPEventIDType nEventID, CAPQueryCommandField* pQueryCommandField = NULL, int nMaxExecuteCount = 1, TAPTimeAnchorType nExecuteGap = -1, bool bRefuseError = false, TAPTimeAnchorType nExecuteTimeout = -1);
 
 	/// 设置时间锚
 	APAPI_DLL_EXPORT TAPTimeAnchorType setTimeAnchor();
